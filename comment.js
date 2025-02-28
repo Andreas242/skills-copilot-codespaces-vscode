@@ -17,7 +17,7 @@ let comments = [];
 
 //send the public path
 app.use(express.static(publicPath));
-//send the comment path
+//send the comment patha
 app.use(express.static(commentPath));
 //send the comments
 app.get('/comments', (req, res) => {
