@@ -1,2 +1,11 @@
-//setup web server
-// create a web server that listens on port 3000 and serves up the comments.js
+//setup webserver
+var express = require('express');
+var app = express();
+
+//setup body parser
+var bodyParser = require('body-parser');
+app.use(bodyParser.json());
+
+//setup mongodb
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/comment');
